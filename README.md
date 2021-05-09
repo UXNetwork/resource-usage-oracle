@@ -28,6 +28,9 @@ Data submission uses a small node.js Express http server.
 1) `docker-compose down`
 2) `rm redis/dump.rdb`
 
+### For a more secure permissions structure
+You may wish to setup a new permission linked only to the `settotalusg`, `addactusg` and `nextperiod` actions used by this software.
+
 ### Running multiple oracle instances on one machine (for testing)
 1) Copy whole repo to a new directory for each oracle
 2) Update config.env in these directories to reflect appropriate submission credentials for each oracle
