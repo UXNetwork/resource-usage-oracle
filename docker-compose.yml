@@ -60,7 +60,7 @@ services:
   # stores all usage data
   redis:
     restart: always
-    image: "redis"
+    image: "redis:6.2.3"
     volumes:
       - "./redis:/data"
     entrypoint: ["redis-server", "--save", "300", "1"]
